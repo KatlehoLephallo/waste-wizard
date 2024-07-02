@@ -30,12 +30,10 @@ Similar endpoints are provided for disposal guidelines and recycling tips.
 
 ## How to Run
 
-1. Clone the repository: `git clone https://github.com/username/repository.git`
+1. Clone the repository: `git clone https://github.com/KatlehoLephallo/waste-wizard.git`
 2. Navigate to the project directory: `cd KatlehoLephallo`
 3. Build the project: `mvn clean install`
 4. Run the application: `java -jar target/KatlehoLephallo-0.0.1-SNAPSHOT.jar`
-
-Replace `username` and `repository` with your GitHub username and repository name, respectively.
 
 ## Testing
 
@@ -44,12 +42,7 @@ Unit tests have been written for the controllers and can be run with the `mvn te
 ## Future Improvements
 
 - Add user authentication and authorization.
-- Implement caching for improved performance.
 - Add more detailed error handling.
-
-## Contributing
-
-Contributions are welcome! Please read the contributing guide for more information.
 
 ## License
 
