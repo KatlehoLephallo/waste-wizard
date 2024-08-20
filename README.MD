@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a waste sorting mobile application developed for Enviro365. The application promotes sustainable waste management practices by providing guidance on proper waste disposal techniques and encouraging recycling habits.
+This project is a waste sorting mobile application developed for Enviro. The application promotes sustainable waste management practices by providing guidance on proper waste disposal techniques and encouraging recycling habits.
 
 ## Features
 
@@ -15,6 +15,7 @@ This project is a waste sorting mobile application developed for Enviro365. The 
 - **Spring Boot:** Used for creating the RESTful web service.
 - **Spring HATEOAS:** Used for creating a hypermedia-driven RESTful web service.
 - **JUnit and Mockito:** Used for testing the application.
+- **Docker:** Used to containerize the application for consistent deployment.
 
 ## Endpoints
 
@@ -30,10 +31,19 @@ Similar endpoints are provided for disposal guidelines and recycling tips.
 
 ## How to Run
 
+### Locally
+
 1. Clone the repository: `git clone https://github.com/KatlehoLephallo/waste-wizard.git`
 2. Navigate to the project directory: `cd KatlehoLephallo`
 3. Build the project: `mvn clean install`
-4. Run the application: `java -jar target/KatlehoLephallo-0.0.1-SNAPSHOT.jar`
+4. Run the application: `java -jar target/waste-wizard:0.0.3.jar`
+
+### Using Docker
+
+1. Clone the repository: `git clone https://github.com/KatlehoLephallo/waste-wizard.git`
+2. Navigate to the project directory: `cd KatlehoLephallo`
+3. Build the Docker image: `docker build -t katleholephallo1/waste-wizard:0.0.3 .`
+4. Run the Docker container: `docker run -p 8080:8080 katleholephallo1/waste-wizard:0.0.3`
 
 ## Testing
 
