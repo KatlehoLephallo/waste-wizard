@@ -1,0 +1,5 @@
+services:
+  waste-wizard:
+    image: katleholephallo1/waste-wizard:0.0.3
+    ports:
+      - 8000:8080
