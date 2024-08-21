@@ -16,6 +16,7 @@ This project is a waste sorting mobile application developed for Enviro. The app
 - **Spring HATEOAS:** Used for creating a hypermedia-driven RESTful web service.
 - **JUnit and Mockito:** Used for testing the application.
 - **Docker:** Used to containerize the application for consistent deployment.
+- **Kubernetes:** Used for orchestrating the deployment, scaling, and management of containerized applications.
 
 ## Endpoints
 
@@ -45,6 +46,12 @@ Similar endpoints are provided for disposal guidelines and recycling tips.
 3. Build the Docker image: `docker build -t katleholephallo1/waste-wizard:0.0.3 .`
 4. Run the Docker container: `docker run -p 8080:8080 katleholephallo1/waste-wizard:0.0.3`
 
+### Using Kubernetes
+
+1. Ensure that you have a running Kubernetes cluster and kubectl installed and configured.
+2. Create a deployment using the Docker image: `kubectl create deployment waste-wizard --image=katleholephallo1/waste-wizard:0.0.3`
+3. Expose the deployment as a service: `kubectl expose deployment waste-wizard --type=LoadBalancer --port=8080`
+
 ## Testing
 
 Unit tests have been written for the controllers and can be run with the `mvn test` command.
@@ -56,4 +63,4 @@ Unit tests have been written for the controllers and can be run with the `mvn te
 
 ## License
 
-This project is licensed under the terms of the MIT license. See the LICENSE file for details.
+This project is licensed under the terms of the MIT license. See the LICENSE file for details."
